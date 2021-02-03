@@ -1,0 +1,104 @@
+<tr class="accordion-toggle" id="ethereum-workitem-maintr">
+    <td><a href="#ethereum-workitem-expdiv" data-toggle="collapse"><img src="ethereum-workitem/icon.png" width="40" height="40">&nbsp;<b>Ethereum</b></a></td>
+    <td><button type="button" class="btn btn-primary"><span class="badge">6</span></button></td>
+    <td>Integrate with the Ethereum Blockchain app platform</td>
+    <td>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-ethereum-workitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="fa fa-download">&nbsp;Select</span>
+      </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-ethereum-workitem">
+            <a class="dropdown-item" href="ethereum-workitem/ethereum-workitem.wid"><span class="fa fa-file">&nbsp;Workitem Definition MVEL</span></a>
+            <a class="dropdown-item" href="ethereum-workitem/kie-deployment-descriptor.xml"><span class="fa fa-file">&nbsp;Kie Deployment Descriptor</span></a>
+            <a class="dropdown-item" href="ethereum-workitem/ethereum-workitem-7.50.0-SNAPSHOT.jar"><span class="fa fa-file">&nbsp;Workitem Jar</span></a>
+            <a class="dropdown-item" href="ethereum-workitem/ethereum-workitem.bpmn2"><span class="fa fa-file">&nbsp;Sample BPMN2 Process</span></a>
+        </div>
+    </div>
+    </td>
+    <td>
+    <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownInstallButton-ethereum-workitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-cogs">&nbsp;Select</span>
+          </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownInstallButton-ethereum-workitem">
+                <a class="dropdown-item" data-toggle="modal" data-target="#installToWorkbenchModal" data-workitem-group="ethereum-workitem" data-workitem-name="Ethereum"
+                data-workitem-handlers="EthereumQueryExistingContract,EthereumObserveContractEvent,EthereumTransactExistingContract,EthereumSendEther,EthereumDeployContract,EthereumGetBalance"><span class="fa fa-file">&nbsp;KIE Workbench</span></a>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr id="ethereum-workitem-exptr">
+    <td colspan="12" class="hiddenRow"><div id="ethereum-workitem-expdiv" class="accordian-body collapse">
+       <table class="table table-sm">
+       <tbody>
+       <tr><td>
+
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Handler</th>
+                  <th scope="col">Wid</th>
+                  <th scope="col">Auth Required</th>
+                  <th scope="col">Docs</th>
+                </tr>
+              </thead>
+              <tbody>
+                           <tr>
+                                 <th scope="row">1</th>
+                                 <td>EthereumQueryExistingContract</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.QueryExistingContractWorkitemHandler("walletPassword", "walletPath")</td>
+                                 <td><a href="ethereum-workitem/EthereumQueryExistingContract.wid">EthereumQueryExistingContract.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumQueryExistingContract" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+                           <tr>
+                                 <th scope="row">2</th>
+                                 <td>EthereumObserveContractEvent</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.ObserveContractEventWorkitemHandler()</td>
+                                 <td><a href="ethereum-workitem/EthereumObserveContractEvent.wid">EthereumObserveContractEvent.wid</a></td>
+                                 <td>false</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumObserveContractEvent" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+                           <tr>
+                                 <th scope="row">3</th>
+                                 <td>EthereumTransactExistingContract</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.TransactExistingContractWorkitemHandler("walletPassword", "walletPath")</td>
+                                 <td><a href="ethereum-workitem/EthereumTransactExistingContract.wid">EthereumTransactExistingContract.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumTransactExistingContract" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+                           <tr>
+                                 <th scope="row">4</th>
+                                 <td>EthereumSendEther</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.SendEtherWorkitemHandler("walletPassword", "walletPath")</td>
+                                 <td><a href="ethereum-workitem/EthereumSendEther.wid">EthereumSendEther.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumSendEther" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+                           <tr>
+                                 <th scope="row">5</th>
+                                 <td>EthereumDeployContract</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.DeployContractWorkitemHandler("walletPassword", "walletPath")</td>
+                                 <td><a href="ethereum-workitem/EthereumDeployContract.wid">EthereumDeployContract.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumDeployContract" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+                           <tr>
+                                 <th scope="row">6</th>
+                                 <td>EthereumGetBalance</td>
+                                 <td>mvel: new org.jbpm.process.workitem.ethereum.GetBalanceWorkitemHandler("walletPassword", "walletPath")</td>
+                                 <td><a href="ethereum-workitem/EthereumGetBalance.wid">EthereumGetBalance.wid</a></td>
+                                 <td>true</td>
+                                 <td><a href="ethereum-workitem/index.html#EthereumGetBalance" class="btn btn-secondary btn-sm" role="button" aria-disabled="true"><span class="fa fa-eye">&nbsp;View</span></a></td>
+                               </tr>
+
+               </tbody>
+               </table>
+
+       </td></tr>
+        </tbody>
+       </table></div>
+    </td>
+</tr>

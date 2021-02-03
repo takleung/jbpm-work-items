@@ -1,0 +1,8 @@
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/GetBalanceWorkitemHandler.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/ObserveContractEventWorkitemHandler.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/DeployContractWorkitemHandler.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/EthereumUtils.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/TransactExistingContractWorkitemHandler.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/EthereumAuth.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/SendEtherWorkitemHandler.java
+/root/jbpm-work-items/ethereum-workitem/target/generated-sources/java/org/jbpm/process/workitem/ethereum/QueryExistingContractWorkitemHandler.java

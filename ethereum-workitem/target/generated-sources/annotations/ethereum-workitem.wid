@@ -1,0 +1,157 @@
+[
+        [
+            "name" : "EthereumQueryExistingContract",
+            "displayName" : "EthereumQueryExistingContract",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.QueryExistingContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "MethodOutputType" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"ContractMethodName" : new StringDataType()
+                ,"ContractAddress" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Result" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumQueryExistingContract.png"
+
+        ]
+    ,[
+            "name" : "EthereumObserveContractEvent",
+            "displayName" : "EthereumObserveContractEvent",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.ObserveContractEventWorkitemHandler()",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "SignalName" : new StringDataType()
+                ,"EventReturnType" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"EventIndexedParameter" : new StringDataType()
+                ,"EventName" : new StringDataType()
+                ,"EventNonIndexedParameter" : new StringDataType()
+                ,"AbortOnUpdate" : new StringDataType()
+                ,"ContractAddress" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumObserveContractEvent.png"
+
+        ]
+    ,[
+            "name" : "EthereumTransactExistingContract",
+            "displayName" : "EthereumTransactExistingContract",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.TransactExistingContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "MethodInputType" : new StringDataType()
+                ,"WaitForReceipt" : new StringDataType()
+                ,"DepositAmount" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"MethodName" : new StringDataType()
+                ,"ContractAddress" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Receipt" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumTransactExistingContract.png"
+
+        ]
+    ,[
+            "name" : "EthereumSendEther",
+            "displayName" : "EthereumSendEther",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.SendEtherWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "Amount" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"ToAddress" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Receipt" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumSendEther.png"
+
+        ]
+    ,[
+            "name" : "EthereumDeployContract",
+            "displayName" : "EthereumDeployContract",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.DeployContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "WaitForReceipt" : new StringDataType()
+                ,"DepositAmount" : new StringDataType()
+                ,"ContractPath" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "ContractAddress" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumDeployContract.png"
+
+        ]
+    ,[
+            "name" : "EthereumGetBalance",
+            "displayName" : "EthereumGetBalance",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.GetBalanceWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "ServiceURL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Balance" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumGetBalance.png"
+
+        ]
+
+]

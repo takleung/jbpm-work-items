@@ -1,0 +1,28 @@
+[
+        [
+            "name" : "EthereumSendEther",
+            "displayName" : "EthereumSendEther",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.SendEtherWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "Amount" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"ToAddress" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Receipt" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumSendEther.png"
+
+        ]
+
+]

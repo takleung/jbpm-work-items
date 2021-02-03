@@ -1,0 +1,8 @@
+org/jbpm/process/workitem/ethereum/EthereumUtils.class
+org/jbpm/process/workitem/ethereum/DeployContractWorkitemHandler.class
+org/jbpm/process/workitem/ethereum/ObserveContractEventWorkitemHandler.class
+org/jbpm/process/workitem/ethereum/SendEtherWorkitemHandler.class
+org/jbpm/process/workitem/ethereum/QueryExistingContractWorkitemHandler.class
+org/jbpm/process/workitem/ethereum/EthereumAuth.class
+org/jbpm/process/workitem/ethereum/TransactExistingContractWorkitemHandler.class
+org/jbpm/process/workitem/ethereum/GetBalanceWorkitemHandler.class

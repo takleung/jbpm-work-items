@@ -1,0 +1,29 @@
+[
+        [
+            "name" : "EthereumDeployContract",
+            "displayName" : "EthereumDeployContract",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.DeployContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "WaitForReceipt" : new StringDataType()
+                ,"DepositAmount" : new StringDataType()
+                ,"ContractPath" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "ContractAddress" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumDeployContract.png"
+
+        ]
+
+]

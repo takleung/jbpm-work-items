@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.19">
+<file name="/root/jbpm-work-items/karaf-itests/src/test/java/org/jbpm/process/workitem/camel/karaf/itests/AbstractKarafIntegrationTest.java">
+</file>
+<file name="/root/jbpm-work-items/karaf-itests/src/test/java/org/jbpm/process/workitem/camel/karaf/itests/CamelWorkitemIntegrationTest.java">
+</file>
+<file name="/root/jbpm-work-items/karaf-itests/src/test/filtered-resources/test.properties">
+</file>
+</checkstyle>

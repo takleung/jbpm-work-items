@@ -1,0 +1,31 @@
+[
+        [
+            "name" : "EthereumTransactExistingContract",
+            "displayName" : "EthereumTransactExistingContract",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.TransactExistingContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "MethodInputType" : new StringDataType()
+                ,"WaitForReceipt" : new StringDataType()
+                ,"DepositAmount" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"MethodName" : new StringDataType()
+                ,"ContractAddress" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Receipt" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumTransactExistingContract.png"
+
+        ]
+
+]

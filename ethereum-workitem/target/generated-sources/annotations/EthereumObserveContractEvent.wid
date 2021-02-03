@@ -1,0 +1,29 @@
+[
+        [
+            "name" : "EthereumObserveContractEvent",
+            "displayName" : "EthereumObserveContractEvent",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.ObserveContractEventWorkitemHandler()",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "SignalName" : new StringDataType()
+                ,"EventReturnType" : new StringDataType()
+                ,"ServiceURL" : new StringDataType()
+                ,"EventIndexedParameter" : new StringDataType()
+                ,"EventName" : new StringDataType()
+                ,"EventNonIndexedParameter" : new StringDataType()
+                ,"AbortOnUpdate" : new StringDataType()
+                ,"ContractAddress" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumObserveContractEvent.png"
+
+        ]
+
+]

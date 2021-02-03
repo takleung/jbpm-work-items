@@ -1,0 +1,391 @@
+{
+        "name" : "EthereumQueryExistingContract",
+        "displayName" : "EthereumQueryExistingContract",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.QueryExistingContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumQueryExistingContract.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"query"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Query an existing contract deployed on the blockchain",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "Wallet password"
+                                           }
+                    ,{
+                                               "name" : "Path to the wallet file"
+                                           }
+
+                ],
+                "authreferencesite" : "",
+            "parameters" : [
+                                   {
+                                       "name" : "MethodOutputType",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ContractMethodName",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ContractAddress",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "Result",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+,{
+        "name" : "EthereumObserveContractEvent",
+        "displayName" : "EthereumObserveContractEvent",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.ObserveContractEventWorkitemHandler()",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumObserveContractEvent.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"observe"
+
+            ],
+                "istrigger" : "true",
+                "triggertitle" : "Observe a smart contract deployed onto the blockchain",
+            "requiresauth" : "false",
+            "parameters" : [
+                                   {
+                                       "name" : "SignalName",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "EventReturnType",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "EventIndexedParameter",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "EventName",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "EventNonIndexedParameter",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "AbortOnUpdate",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ContractAddress",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+,{
+        "name" : "EthereumTransactExistingContract",
+        "displayName" : "EthereumTransactExistingContract",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.TransactExistingContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumTransactExistingContract.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"transaction"
+                ,"send"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Perform a transaction to an existing contract on the blockchain",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "Wallet password"
+                                           }
+                    ,{
+                                               "name" : "Path to the wallet file"
+                                           }
+
+                ],
+                "authreferencesite" : "",
+            "parameters" : [
+                                   {
+                                       "name" : "MethodInputType",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "WaitForReceipt",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "DepositAmount",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "MethodName",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ContractAddress",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "Receipt",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+,{
+        "name" : "EthereumSendEther",
+        "displayName" : "EthereumSendEther",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.SendEtherWorkitemHandler(\"walletPassword\", \"walletPath\")",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumSendEther.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"send"
+                ,"ether"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Send ether to an existing contract on the blockchain",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "Wallet password"
+                                           }
+                    ,{
+                                               "name" : "Path to the wallet file"
+                                           }
+
+                ],
+                "authreferencesite" : "",
+            "parameters" : [
+                                   {
+                                       "name" : "Amount",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ToAddress",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "Receipt",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+,{
+        "name" : "EthereumDeployContract",
+        "displayName" : "EthereumDeployContract",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.DeployContractWorkitemHandler(\"walletPassword\", \"walletPath\")",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumDeployContract.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"deploy"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Deploy a new smart contract onto the blockchain",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "Wallet password"
+                                           }
+                    ,{
+                                               "name" : "Path to the wallet file"
+                                           }
+
+                ],
+                "authreferencesite" : "",
+            "parameters" : [
+                                   {
+                                       "name" : "WaitForReceipt",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "DepositAmount",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ContractPath",
+                                       "type" : "new StringDataType()"
+                                   }
+                ,{
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "ContractAddress",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+,{
+        "name" : "EthereumGetBalance",
+        "displayName" : "EthereumGetBalance",
+        "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.GetBalanceWorkitemHandler(\"walletPassword\", \"walletPath\")",
+        "documentation" : "ethereum-workitem/index.html",
+        "module" : "ethereum-workitem",
+        "icon" : "EthereumGetBalance.png",
+            "category" : "Ethereum",
+            "description" : "Integrate with the Ethereum Blockchain app platform",
+            "keywords" : [
+                                "Ethereum"
+                ,"blockchain"
+                ,"smart"
+                ,"contract"
+                ,"smartcontract"
+                ,"balance"
+
+            ],
+                "isaction" : "true",
+                "actiontitle" : "Get your Ether balance from blockchain",
+            "requiresauth" : "true",
+                "authparams" : [
+                                           {
+                                               "name" : "Wallet password"
+                                           }
+                    ,{
+                                               "name" : "Path to the wallet file"
+                                           }
+
+                ],
+                "authreferencesite" : "",
+            "parameters" : [
+                                   {
+                                       "name" : "ServiceURL",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "results" : [
+                                   {
+                                       "name" : "Balance",
+                                       "type" : "new StringDataType()"
+                                   }
+
+            ],
+            "mavenDependencies" : [
+                                   {
+                                       "groupId" : "org.jbpm.contrib",
+                                       "artifactId" : "ethereum-workitem",
+                                       "version" : "7.50.0-SNAPSHOT"
+                                   }
+
+            ]
+}
+
+,

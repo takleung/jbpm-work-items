@@ -1,0 +1,26 @@
+[
+        [
+            "name" : "EthereumGetBalance",
+            "displayName" : "EthereumGetBalance",
+            "category" : "ethereum-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.ethereum.GetBalanceWorkitemHandler(\"walletPassword\", \"walletPath\")",
+            "documentation" : "ethereum-workitem/index.html",
+
+            "parameters" : [
+                                "ServiceURL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Balance" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:ethereum-workitem:7.50.0-SNAPSHOT"
+
+            ],
+            "icon" : "EthereumGetBalance.png"
+
+        ]
+
+]

@@ -1,0 +1,745 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <a name="EthereumQueryExistingContract"></a><div class="card">
+                <div class="card-header"><b>1. EthereumQueryExistingContract Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumQueryExistingContract</td>
+                <td>EthereumQueryExistingContract</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.QueryExistingContractWorkitemHandler("walletPassword", "walletPath")</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>MethodOutputType</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ContractMethodName</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ContractAddress</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Result</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>
+                                        walletPassword<br/>
+                                        walletPath<br/>
+
+                    </td>
+                    <td>
+                                        Wallet password<br>
+                                        Path to the wallet file<br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+        <a name="EthereumObserveContractEvent"></a><div class="card">
+                <div class="card-header"><b>2. EthereumObserveContractEvent Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumObserveContractEvent</td>
+                <td>EthereumObserveContractEvent</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.ObserveContractEventWorkitemHandler()</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>SignalName</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>EventReturnType</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>EventIndexedParameter</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>EventName</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>EventNonIndexedParameter</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>AbortOnUpdate</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>ContractAddress</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>false</td>
+                    <td>
+                    <br/>
+
+                    </td>
+                    <td>
+                    <br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+        <a name="EthereumTransactExistingContract"></a><div class="card">
+                <div class="card-header"><b>3. EthereumTransactExistingContract Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumTransactExistingContract</td>
+                <td>EthereumTransactExistingContract</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.TransactExistingContractWorkitemHandler("walletPassword", "walletPath")</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>MethodInputType</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>WaitForReceipt</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>DepositAmount</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>MethodName</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ContractAddress</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Receipt</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>
+                                        walletPassword<br/>
+                                        walletPath<br/>
+
+                    </td>
+                    <td>
+                                        Wallet password<br>
+                                        Path to the wallet file<br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+        <a name="EthereumSendEther"></a><div class="card">
+                <div class="card-header"><b>4. EthereumSendEther Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumSendEther</td>
+                <td>EthereumSendEther</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.SendEtherWorkitemHandler("walletPassword", "walletPath")</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Amount</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ToAddress</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Receipt</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>
+                                        walletPassword<br/>
+                                        walletPath<br/>
+
+                    </td>
+                    <td>
+                                        Wallet password<br>
+                                        Path to the wallet file<br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+        <a name="EthereumDeployContract"></a><div class="card">
+                <div class="card-header"><b>5. EthereumDeployContract Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumDeployContract</td>
+                <td>EthereumDeployContract</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.DeployContractWorkitemHandler("walletPassword", "walletPath")</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>WaitForReceipt</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>DepositAmount</td>
+                        <td>new StringDataType()</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>ContractPath</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>ContractAddress</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>
+                                        walletPassword<br/>
+                                        walletPath<br/>
+
+                    </td>
+                    <td>
+                                        Wallet password<br>
+                                        Path to the wallet file<br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+        <a name="EthereumGetBalance"></a><div class="card">
+                <div class="card-header"><b>6. EthereumGetBalance Workitem Handler</b></div>
+                <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Display Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Handler</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EthereumGetBalance</td>
+                <td>EthereumGetBalance</td>
+                <td>ethereum-workitem</td>
+                <td></td>
+                <td>mvel: new org.jbpm.process.workitem.ethereum.GetBalanceWorkitemHandler("walletPassword", "walletPath")</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <b>Parameters</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>ServiceURL</td>
+                        <td>new StringDataType()</td>
+                        <td>true</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Results</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Balance</td>
+                        <td>new StringDataType()</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+        <b>Maven Dependencies</b>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Group</th>
+                <th>Artifact</th>
+                <th>Version</th>
+            </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>org.jbpm.contrib</td>
+                        <td>ethereum-workitem</td>
+                        <td>7.50.0-SNAPSHOT</td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <br/>
+            <b>Authentication Information</b>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Auth Required</th>
+                    <th>Params</th>
+                    <th>Params Description</th>
+                    <th>Reference Site</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>
+                                        walletPassword<br/>
+                                        walletPath<br/>
+
+                    </td>
+                    <td>
+                                        Wallet password<br>
+                                        Path to the wallet file<br>
+
+                    </td>
+                    <td></td>
+                 </tr>
+                 </tbody>
+            </table>
+            <br/>
+        </div></div><p/>
+
+    </div>
+    </body>
+</html>
